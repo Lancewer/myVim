@@ -1,0 +1,30 @@
+"This file contains vim settings only for linux
+"like vimwiki path etc.
+
+"set the gui font
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10 "set the font(Modified for Powerline plugin)
+
+"----- let the gvim maximize at start up
+if has('gui_running')
+    au GUIEnter * call MaximizeWindow()
+endif
+
+"Maximize gvim function definition
+"Need to install wmctrl first under gnome
+"apt-get install wmctrl
+function! MaximizeWindow()
+    silent !wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz
+endfunction
+
+"================= Plugins settings ================================
+"path       ==> path to yunio/myWiki
+"path_html  ==> path to store html files
+"template_path ==> where the templates placed
+"template_default ==> default template name
+"template_ext   ==> template extend type
+"so my default template will be template_path/template.html
+let g:vimviki_list=[{'path':'~/yunio/myWiki/',
+    \ 'path_html':'~/yunio/myWiki/html/',
+    \ 'template_path':'~/yunio/myWiki/template/',
+    \ 'template_default':'template',
+    \ 'template_ext':'.html'}]
