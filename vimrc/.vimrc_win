@@ -30,4 +30,7 @@ let g:vimviki_list=[{'path':'E:/Yunio/myWiki/',
 "Open a vertical snippet editor window for current filetype
 let g:UltiSnipsEditSplit="vertical"
 "Define the folder contain self defined snippets
-let g:UltiSnipsSnippetsDir="E:/myRepo/mySnippets"
+"let g:UltiSnipsSnippetsDir="$HOME/mySnippets -- //TODO not functional, solve this later
+"let the UltiSnips can find self defined snippets
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "mySnippets"]
+

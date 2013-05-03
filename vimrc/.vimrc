@@ -24,7 +24,7 @@ call pathogen#infect()  "use pathogen to manage all vim plugins
 if has("win32") || has("win64")
     source $VIMRUNTIME\delmenu.vim "resolve menu display problem
     source $VIMRUNTIME\menu.vim
-    source $VIM\_vimrc_win    "for windows
+    source $VIM\.vimrc_win    "for windows
     language messages zh_CN.utf-8 "solve the chinese display
 else
     source ~/.vimrc_linux   "for linux
