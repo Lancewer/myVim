@@ -1,0 +1,20 @@
+4.1 操作符与动作
+动作motion分为非包含的(exclusive)和包含的(inclusive).
+例如w(词移动命令)即为包含的，而e(词移动命令)即为非包含的。
+操作符+动作 定义了 命令组合模式，可以加入次数如d4w,或4dw 或 4d2w等
+
+4.2 修改文本
+c	--> change 
+cc	--> change a whole line, but keep the original indent!
+c$	--> change to the line end.
+
+SHORTCUTS:
+	x == dl	--> delete a letter under the cursor
+	X == dh	--> delete a letter before the cursor
+	D == d$	--> delete from cursor to the line end
+	C == c$ --> change from cursor to the line end
+	s == cl --> change a letter under the cursor
+	S == cc --> change a whole line.
+
+r	--> replace a letter
+r is not a operator!!

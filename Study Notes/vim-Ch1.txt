@@ -1,0 +1,15 @@
+Chapter 1
+dd	--> delete whole line;
+J	--> join two lines, means delete the <CR> character at the end of line 1;
+u	--> undo last change;
+CTRL-R	--> redo last command;
+U	--> undo whole line;
+a	--> append;
+o	--> start a new line below the current line;
+O	--> start a new line above the current line;
+ZZ	--> save and quit;
+:q!	--> discard all the change and quit;
+:e!	--> reload the file and discard the changes from last save;
+CTRL-]	--> jump to the tag;
+CTRL-T	--> back to previous location;
+CTRL-O	--> forward to next location;
