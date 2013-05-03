@@ -33,4 +33,7 @@ let g:UltiSnipsEditSplit="vertical"
 "let g:UltiSnipsSnippetsDir="$HOME/mySnippets -- //TODO not functional, solve this later
 "let the UltiSnips can find self defined snippets
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "mySnippets"]
-
+"remap the Trigger key
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
