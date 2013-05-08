@@ -97,3 +97,11 @@ let g:miniBufExplMapWindowNavVim = 1    "this line maybe not correctly functiona
 let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
+
+"----- NERDTree -------
+"Toggle nerdtree
+cabbr nt NERDTreeToggle
+"Open from bookmark
+cabbr nfb NERDTreeFromBookmark
+"close nerdtree
+cabbr nc NERDTreeClose
